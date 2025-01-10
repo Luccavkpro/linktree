@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container {
+            background-color:rgb(171, 243, 243);
+            display:flex;
+            min-height:25rem;
+            flex-wrap:wrap;
+
+        }
+
+        .flex-item {
+            padding:20px;
+            margin:10px;
+            background-color:blueviolet;
+            height:20px;
+            
+        }
+
+        .item1 {
+            /* flex-shrink:1;
+            flex-grow:1;
+            flex-basis:200px; */
+            flex:1 1 200px;
+        }
+
+        .item2 {
+            flex-shrink:4;
+            flex-grow:4;
+            flex-basis:200px;
+        }
+
+        .item3 {
+            flex-shrink:1;
+            flex-grow:1;
+            flex-basis:200px;
+        }
+
+        .row {
+            display:flex;
+            width:100%;
+            
+        }
+
+        .item4 {
+            flex-shrink:2;
+            flex-grow:2;
+            flex-basis:200px;
+        }
+
+        .item5 {
+            flex-shrink:1;
+            flex-grow:1;
+            flex-basis:200px;
+        }
+
+        .item6 {
+            flex-shrink:3;
+            flex-grow:3;
+            flex-basis:200px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="flex-container">
+        <div class="row">
+                <div class="flex-item item1">1</div>
+                <div class="flex-item item2">2</div>
+                <div class="flex-item item3">3</div>
+        </div>
+
+        <div class="row">
+            <div class="flex-item item4">4</div>
+            <div class="flex-item item5">5</div>
+            <div class="flex-item item6">6</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

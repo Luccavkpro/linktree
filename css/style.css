@@ -1,13 +1,44 @@
+ /* css reset */
+ * {
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+ }
+ 
  body {
     background-color: #86cb27;
     /* text-align: center;   */
     font-family: sans-serif;
     color: white; 
     padding: 2rem 1rem;
+   
 } 
 
- /* img { */
-    /* width: 96px; */
-    /* height: 96px; */
-    /* border-radius: 50%; */
- /* }  */
+.header-buttons {
+   display:flex;
+   justify-content:space-between;
+   margin-bottom:2rem;
+}
+
+.header-button  {
+   background-color:rgba(178, 231, 103, 0.9);
+   border:none;
+   color:#ffffff;
+   width:2rem;
+   height:2rem;
+   border-radius:50%;
+   cursor:pointer;
+
+
+}
+
+.profile-img{
+   width: 96px;
+   height: 96px;
+   border-radius: 50%;
+}
+
+.profile-bio {
+   color: rgb(70, 12, 70);
+   font-size: 0.9rem;
+}
